@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+/* html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+} */
+
+body{
+    /* width: 100vw; */
+    /* margin: 10px; */
+    background: url('/public/bg.jpg') no-repeat center center/cover;
+    overflow: scroll;
+    height: 97vh;
+}
+
+
+#navbar {
+    /* margin: 10px 0px; */
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    background-color: #bcb0a1;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 23px;
+}
+
+#navbar h1 {
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+}
+#navbar img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.messageArea{
+    /* border: 2px solid black; */
+    color: white;
+    max-width:90%;
+    /* background-color: purple; */
+    margin: auto;
+    padding: 5px 4px;
+    /* height: ; */
+    font-size: 18px;
+    font-family: 'Akaya Telivigala', cursive;
+    overflow-y: auto;
+    margin-bottom: 50px;
+    height: 480px;
+    /* height: 100px; */
+    /* overflow-x: hidden; */
+}
+.chat{
+    margin: 5px;
+    padding: 7px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.left{
+    /* float: left; */
+    background-color: rgb(13 93 5);
+    /* background-color: #936614; */
+    clear: both;
+    
+    margin: 5px;
+    padding: 7px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.right{
+    background-color: purple;
+    float: right;
+    clear: both;
+
+    margin: 5px;
+    padding: 7px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+#form{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 90%;    
+    justify-content: center;
+    margin-left: 5%;
+}
+.send{
+    position: fixed;
+    margin-top: 3rem;
+    bottom: 20px;
+    /* width: 90%; */
+    width: 100vw;
+    /* margin: 2px 20px; */
+    /* justify-items: center; */
+}
+.send .InputMessage{
+    width: 90%;
+    padding: 4px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid purple;
+    background: #1b144ba6;
+    color: white;
+    font-size: 21px;
+    /* text-decoration: none; */
+    font-family: 'Dosis', sans-serif;
+}
+.send #btn{
+    cursor: pointer;
+    /* padding: 8px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    width: 12%;
+    margin: 3px;
+    font-size: 20px;
+    outline: none;
+    text-align: center;
+}
+
+
+@media screen and (max-width : 590px){
+    body{
+        height: 100vh;
+    }
+    #navbar h1 {
+        /* font-family: 'Akaya Telivigala', cursive; */
+        font-size: 1.5rem;
+        /* text-align: center; */
+    }   
+    .send .InputMessage{
+        width: 70%;
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width : 480px){
+    #form{
+        flex-direction: column;
+    }
+    .send .InputMessage{
+        width: 65%;
+        font-size: 15px;
+    }
+    .send #btn{
+        font-size: 16px;
+        /* padding: 0; */
+        padding: 3px;
+        width:60px;
+        margin-top: 10px;
+
+    }
+}
+
+
+@media screen and (max-width : 290px){
+    #navbar h1 {
+        /* font-family: 'Akaya Telivigala', cursive; */
+        font-size: 15px;
+        /* text-align: center; */
+    }   
+    .send #bnt{
+        font-size: 10px;
+        padding: 0;
+
+    }
+}

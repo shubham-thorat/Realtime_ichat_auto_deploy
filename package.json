@@ -1,0 +1,16 @@
+{
+  "name": "realtime_ichat",
+  "version": "1.0.0",
+  "description": "End server HTML webpage that serves out form and list",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Shubham Thorat",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.3"
+  }
+}
